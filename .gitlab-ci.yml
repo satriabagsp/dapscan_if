@@ -1,0 +1,92 @@
+image: docker:19.03.12
+
+services:
+  - docker:19.03.12
+
+stages:
+  - package
+  - coverage
+  - sast
+  - dast
+
+docker-package:
+  stage: package
+  tags:
+    - development
+    - dapscan
+  only:
+    - development
+  script:
+    - docker login devops-registry.bps.go.id -u $USER_NAME -p $PERSONAL_ACCESS_TOKEN
+    - docker build -t devops-registry.bps.go.id/daps/dapscan .
+    - docker push devops-registry.bps.go.id/daps/dapscan
+    - docker logout devops-registry.bps.go.id
+
+coverage-code:
+  stage: coverage
+  only:
+    - ujicoba
+  tags:
+    - ujicoba
+    - dapscan
+  image: python:3.9-slim
+  script: 
+    - pip3 install coverage
+    - pip3 install pytest
+    - pip3 install pytest-cov
+    - pip3 install pytest-metadata
+    - pytest --cov --cov-report=xml --cov-report=html
+    - ls -a
+  artifacts:
+    paths:
+      - coverage.xml
+      - .coverage
+  allow_failure: true
+
+sonarqube-check:
+  stage: sast
+  tags:
+    - ujicoba
+    - dapscan
+  only:
+    - ujicoba
+  image:
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [ "" ]
+  script:
+    - sonar-scanner -Dsonar.projectKey=dapscan -Dsonar.python.coverage.reportPaths=coverage.xml -Dsonar.host.url=$SONAR_HOST -Dsonar.login=$SONAR_KEY
+  allow_failure: true
+
+dast:
+  stage: dast
+  only:
+    - ujicoba
+  tags:
+    - ujicoba
+    - dapscan
+  image: owasp/zap2docker-stable
+  variables:
+    website: "http://dapscan-daps-dev.apps.okd.bps.go.id"
+  script:
+    - mkdir /zap/wrk/
+    - /zap/zap-baseline.py -r pentest-dapscan.html -t $website || true
+    - cp /zap/wrk/pentest-dapscan.html .
+  artifacts:
+    paths: [pentest-dapscan.html]
+  allow_failure: true
+
+docker-package-production:
+  stage: package
+  tags:
+    - production
+    - dapscan
+  only:
+    - master
+  script:
+    - docker login devops-registry.bps.go.id -u $USER_NAME -p $PERSONAL_ACCESS_TOKEN
+    - docker login -u $REGISTRY_USER -p $REGISTRY_TOKEN ${REGISTRY_HOST}
+    - docker pull devops-registry.bps.go.id/daps/dapscan:latest
+    - docker tag devops-registry.bps.go.id/daps/dapscan:latest ${REGISTRY_HOST}/daps/dapscan:release
+    - docker push ${REGISTRY_HOST}/daps/dapscan
+    - docker logout ${REGISTRY_HOST}
+    - docker logout devops-registry.bps.go.id

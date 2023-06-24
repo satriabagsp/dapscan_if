@@ -1,0 +1,10 @@
+pandas
+streamlit==1.23.0
+streamlit_authenticator
+streamlit_option_menu
+Pillow
+mysql.connector
+pyyaml
+statistics
+openpyxl
+deta

@@ -1,0 +1,289 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    adi_nugroho:
+      email: adi_nugroho
+      name: Adi Nugroho SST
+      password: $2b$12$9M6FI2Z.ppiylBIYUQoJCOjnzUZ4I1H6uppdSCqoKP.bpHbVsXsMC
+    admin:
+      email: test_user@gmail.com
+      name: admin
+      password: $2b$12$u3aoS2Sn2WBKym.yUd/5x.gfJoNHPAugTi8zuRXSEQStzqtzgNDJu
+    adwi_hastuti:
+      email: adwi_hastuti
+      name: Adwi Hastuti SST
+      password: $2b$12$PQ9zueBOhKxH.6.rYX5fUuHU.x844WSB88v0BZDSfrs.8THknZt92
+    alvina_clarissa:
+      email: alvina_clarissa
+      name: Alvina Clarissa SST
+      password: $2b$12$skWQqtDrHH4G5WHZHkx8MOtgXbLTkeY0/u.3ZpNB.89KDJtu/MGXK
+    ana_lailatul_fitriyani:
+      email: ana_lailatul_fitriyani
+      name: Ana Lailatul Fitriyani S.Tr.Stat.
+      password: $2b$12$8WUtF.3qBbzonwwe4sv.qe6LQC2KchwgySyLN6xGk0STm5YudmToy
+    bayu_dwi_kurniawan:
+      email: bayu_dwi_kurniawan
+      name: Bayu Dwi Kurniawan S.Tr.Stat.
+      password: $2b$12$ma6gSiz5e/b8EcKT6.qCEu1AN3rGMd0.aksusfu7AYdE3K6sYauB6
+    chairul_anam:
+      email: chairul_anam
+      name: Chairul Anam SAP
+      password: $2b$12$VL7w10Ol9WwDTaTug3Uf8ui1gGibiMRIHnphIsyK4rTZqePWjiHtG
+    dede_yoga_paramartha:
+      email: dede_yoga_paramartha
+      name: Dede Yoga Paramartha S.Tr.Stat
+      password: $2b$12$qMH1a0Y26LCbvQmCFuTLeO9Ecf99Qo9eaUdoNmIkXrvlj/Kfyk2I6
+    dewi_krismawati:
+      email: dewi_krismawati
+      name: 'Dewi Krismawati SST, M.T.I'
+      password: $2b$12$Lskk7jSacrgxQRPFfSdE5e/fQv1cEmcFoCarVxp5xWOIXrt9Ih6lW
+    dewi_lestari_amaliah:
+      email: dewi_lestari_amaliah
+      name: Dewi Lestari Amaliah SST
+      password: $2b$12$5OOPVANnKfc4.wTFv6Q8TOC7E8nHr4jXrtXoXOFUKYJ9aFyBTZEyq
+    dewi_widyawati:
+      email: dewi_widyawati
+      name: Dewi Widyawati S.Tr.Stat.
+      password: $2b$12$537EafrvXKCNDs/a29bdlOXOCHapeejEQt1NZWvPhengvcj98PsLq
+    dhiar_niken_larasati:
+      email: dhiar_niken_larasati
+      name: 'Dhiar Niken Larasati SST, M.E.'
+      password: $2b$12$ckTWpIRVSO9hHrqr.d7uDu59jBYtZNS3J.scuYIeZXUST7G/OB.zC
+    didit_puji_hariyanto:
+      email: didit_puji_hariyanto
+      name: Didit Puji Hariyanto SST
+      password: $2b$12$sB8N7LGjepOJaHfGU4JxGOyz5tGBYqNFobseNKT9/I7vv09Jx3C4i
+    dimas_hari_santoso:
+      email: dimas_hari_santoso
+      name: 'Dimas Hari Santoso S.Si, M.Ec, M.E'
+      password: $2b$12$cn2h.XLOFnkuFIJ6f5HgOeaiU4.ygBPFaOmSleXAuvDbZAHDtNYmy
+    dyah_retno_prihatinningsih:
+      email: dyah_retno_prihatinningsih
+      name: Dyah Retno Prihatinningsih B.St
+      password: $2b$12$GWOUQKUpVvfIJkbMcCPHWOCCWQEwOzzS9pZyG8cNA8tAPa6FTNSya
+    ema_tusianti:
+      email: ema_tusianti
+      name: 'Ema Tusianti SST, SAB, M.T., M.Sc'
+      password: $2b$12$yJwxKmsUDYep516pt40bmelL5n1.7pPa9C9lOeSGv17qBT8PSoQe2
+    erna_yulianingsih:
+      email: erna_yulianingsih
+      name: 'Erna Yulianingsih SST, M.Appl.Ecmets'
+      password: $2b$12$.XDFgQwC4DWmogHotKgQle6ZyOPWhJbobgLL7cLdc7oZHsfiClDb.
+    ety_kurniati:
+      email: ety_kurniati
+      name: Ety Kurniati S.ST
+      password: $2b$12$2N8KkT/RA0UenZTPlphfPeLOeUG.K4oDh3ItTXqNggv5bHSVJ3Goy
+    fadlilah_nur_hidayah:
+      email: fadlilah_nur_hidayah
+      name: Fadlilah Nur Hidayah S.Tr.Stat.
+      password: $2b$12$nArD.05twhO1mnyzvO0OA.mdW0q3iwCxjtIzU/b7noKgSayzAKtcO
+    farhan_anshari_arsyi:
+      email: '-'
+      name: Farhan Anshari Arsyi S.Tr.Stat.
+      password: $2b$12$cyx13UrKLag4U4n99/U5ZOt8ORnODTATBayIK33R4nviQjgowONQq
+    fenny_afifatul_awwaliyah:
+      email: fenny_afifatul_awwaliyah
+      name: Fenny Afifatul Awwaliyah S.Tr.Stat.
+      password: $2b$12$wil73uhnmcqUNiiZVVvuzeAHVtaEK3oI3JuoeNPOOcZ5Apv2UvgE2
+    gusti_ngurah_agung_rama_gunawan:
+      email: gusti_ngurah_agung_rama_gunawan
+      name: 'I Gusti Ngurah Agung Rama Gunawan SST.,MT'
+      password: $2b$12$dNLo4PjphtH5BbtKNDoj.uW2Tc9l4r5a3koy6cGE93Xh2uG6QjTDO
+    henri_asri_reagan:
+      email: henri_asri_reagan
+      name: 'Henri Asri Reagan SST., M.Si.'
+      password: $2b$12$JT/7PwO17Av55slLTboN9.H0K.dO8CiWDJYspp4sT5lrkJeB0f7JS
+    indah_budiati:
+      email: '-'
+      name: 'Indah Budiati SST, M.Si'
+      password: $2b$12$s35/GuceS8dHa//TTKAwluuC1hx7Ek07JsXXGqk.DAU5BX63PJcgy
+    julita_lovitawati_aritonang:
+      email: julita_lovitawati_aritonang
+      name: Julita Lovitawati Br. Aritonang SST
+      password: $2b$12$nArD.05twhO1mnyzvO0OA.mdW0q3iwCxjtIzU/b7noKgSayzAKtcO
+    kasiful_aprianto:
+      email: '-'
+      name: Kasiful Aprianto SST
+      password: $2b$12$iItUAxGPnHKSHCvvsuY4j.rzFE3uJwyAEDYtCGsaYMivrtYgA4PIi
+    khairunnisah:
+      email: khairunnisah
+      name: 'Khairunnisah SST, M.S.E'
+      password: $2b$12$FCOv2w.hr9NMuX7.u6LLduQEUhB2vmEeomeRuoial4W4wF48H267e
+    lestyowati_endang_widyantari:
+      email: lestyowati_endang_widyantari
+      name: 'Lestyowati Endang Widyantari S.Si, M.Kesos'
+      password: $2b$12$FCOv2w.hr9NMuX7.u6LLduQEUhB2vmEeomeRuoial4W4wF48H267e
+    maria_audrey_widiatma:
+      email: maria_audrey_widiatma
+      name: Maria Audrey Widiatma S.Tr.Stat.
+      password: $2b$12$T2II1874wUtfbeVbqeSxS.8aVryxbx594VP/eXxYDet1AaJf0EE7G
+    maulana_faris:
+      email: maulana_faris
+      name: Maulana Faris SST
+      password: $2b$12$RdN5xaATHpZv/9wN.85QEuGFlRv5KOgWoFwVTcKyGnvCyQSgFuQdq
+    muhammad_ihsan:
+      email: muhammad_ihsan
+      name: Muhammad Ihsan SST
+      password: $2b$12$sVV7nVL//finFHpokSsooORVhE6BRO9LSEA16Enx3OwRwv/5KWByK
+    nensi_fitria_deli:
+      email: nensi_fitria_deli
+      name: Nensi Fitria Deli SST
+      password: $2b$12$m8F9V8kirdjGhe7HhHZdlO/QEc8CEq3uU.coPMnaPOLlUfsl0d/Ly
+    nia_setiyawati:
+      email: nia_setiyawati
+      name: 'Nia Setiyawati SST, M.Sc'
+      password: $2b$12$EafOEXtDtq9yezs29UFpNOf1qx1.zase6h6C8REbf7hGUK6HuDuhi
+    nur_putri_cahyo_utami:
+      email: nur_putri_cahyo_utami
+      name: 'Nur Putri Cahyo Utami SST, M.P.P'
+      password: $2b$12$dGE3/z8yMUcyAxd1LSiywugqK9yaBm7zkoe8350EpA/Sy088fmWUC
+    nurarifin:
+      email: nurarifin
+      name: 'Nurarifin SST, M.Ec.Dev, M.Ec.'
+      password: $2b$12$DSrcNhwRJi1THUWVNybhh.yVUlM6eJOpzxwlVnl.re8IIk2ng/HUy
+    nurbaety_setram:
+      email: nurbaety_setram
+      name: 'Nurbaety Setram S.Si, M.S.'
+      password: $2b$12$8HTobsJGSrhr5zAL8s6AyOChy94e29ba1qUuyk4F/KoTkF1sK60ee
+    nyoman_setiawan:
+      email: nyoman_setiawan
+      name: I Nyoman Setiawan S.Tr.Stat.
+      password: $2b$12$zExdQAOfB1HO87CH3K7a1u4en3Hd13bsoi/1t.qRedf0CIWQNcdba
+    putri_wahyu_handayani:
+      email: putri_wahyu_handayani
+      name: 'Putri Wahyu Handayani SST, M.S.E'
+      password: $2b$12$nArD.05twhO1mnyzvO0OA.mdW0q3iwCxjtIzU/b7noKgSayzAKtcO
+    ranu_yulianto:
+      email: ranu_yulianto
+      name: Ranu Yulianto SST
+      password: $2b$12$U6I0cCytp82gpeMCa7NYmeGTwTL28X7QR/nDLALJ2QVuOWsUoNYlK
+    rerta_mastiani:
+      email: rerta_mastiani
+      name: 'Rerta Mastiani S.Si, M.Si'
+      password: $2b$12$fDhcWgJeFDVJz9z.M.HAROZqaS3aqTKB.P0PJQjfaMqbNmdUDLCDq
+    ria_noviana:
+      email: ria_noviana
+      name: Ria Noviana S.Tr.Stat.
+      password: $2b$12$nArD.05twhO1mnyzvO0OA.mdW0q3iwCxjtIzU/b7noKgSayzAKtcO
+    sa'ad_tazkiahtu_dienulloh:
+      email: sa'ad_tazkiahtu_dienulloh
+      name: Sa'ad Tazkiahtu Dienulloh SST
+      password: $2b$12$nArD.05twhO1mnyzvO0OA.mdW0q3iwCxjtIzU/b7noKgSayzAKtcO
+    satria_bagus_panuntun:
+      email: satriabgsp22@gmail.com
+      name: Satria Bagus Panuntun S.Tr.Stat.
+      password: $2b$12$LhAMYsnljlig5ARp0ZB8Lel3mbZyi5TYXp9nOvCm6pGgIezKYG7.u
+    sofaria_ayuni:
+      email: sofaria_ayuni
+      name: 'Sofaria Ayuni S.Si, MM'
+      password: $2b$12$hrmABaYwvzJ0xyRE.wxwPOF1cPkeOZ8FxZqLtSdDgc8c4zY6Tn4uy
+    sukmasari_dewanti:
+      email: sukmasari_dewanti
+      name: 'Sukmasari Dewanti SST, M.Sc'
+      password: $2b$12$4NjJDE3gBq9yEsvhI/8/T.MEy0KIuVKm6nMt4T.6NEZU9qIsyQZz6
+    synthia_natalia_kristiani:
+      email: synthia_natalia_kristiani
+      name: Synthia Natalia Kristiani SST
+      password: $2b$12$9CX1AgqCnVMR86KqJMkd6.hOvZDFwjmYVXaTXI4zQegOZDncaR9W.
+    syukriyah_delyana:
+      email: syukriyah_delyana
+      name: Syukriyah Delyana SST
+      password: $2b$12$c8FZfuyKS0yJ3iGpOv49EukHxFC14YkuDJdy/krvQog4SqPeVqUM.
+    tika_meilaningsih:
+      email: tika_meilaningsih
+      name: Tika Meilaningsih S.Tr.Stat.
+      password: $2b$12$yuIEJvbBC189xuvBsnalLOpwCSX3xgKTrzm0cEzCNaJBh0loEfTUy
+    usman_bustaman:
+      email: usman_bustaman
+      name: 'Usman Bustaman S.Si, M.Sc'
+      password: $2b$12$FCOv2w.hr9NMuX7.u6LLduQEUhB2vmEeomeRuoial4W4wF48H267e
+    wahyu_calvin_frans_mariel:
+      email: wahyu_calvin_frans_mariel
+      name: Wahyu Calvin Frans Mariel SST
+      password: $2b$12$JbkYYH2R3mmzf6i6ORXxSuawLdIqGmrYxIL1pUige4j3SXcXDAtze
+    wisnu_winardi:
+      email: wisnu_winardi
+      name: 'Wisnu Winardi SST, ME.'
+      password: $2b$12$TCa/XJAsxJKXtgSA/ivGBOSgFB.pp9vwpiq824vu24zl8z2fkVnOa
+    yeshri_rahayu:
+      email: yeshri_rahayu
+      name: 'Yeshri Rahayu S.Si, M.Sc, MT'
+      password: $2b$12$8WUtF.3qBbzonwwe4sv.qe6LQC2KchwgySyLN6xGk0STm5YudmToy
+    yohanes_eki_apriliawan:
+      email: yohanes_eki_apriliawan
+      name: Yohanes Eki Apriliawan SST
+      password: $2b$12$7X.wpExLeg9qyQajFwQV/ufvXhRtubO2mmwmq6hl/9VBrfRGKPqMC
+    yoyo_karyono:
+      email: yoyo_karyono
+      name: Yoyo Karyono SST
+      password: $2b$12$fVSSzc1VznqP9yB9wZsiGuXyB5h.I9ZyHoRzJ00dVtlOWs1cINcE6
+    zulfa_hidayah_satria_putri:
+      email: zulfa_hidayah_satria_putri
+      name: Zulfa Hidayah Satria Putri SST
+      password: $2b$12$pfxKtklErHVwLPwY.dnaneoTmQWu4dM3LPLAEbBa1kFYxuQbaMY2y
+    yuniarti:
+      email: yuniarti
+      name: Yuniarti S.Si
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    aprilia_ira:
+      email: aprilia_ira
+      name: Aprilia Ira Pratiwi SST
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    ari_shobri:
+      email: ari_shobri
+      name: 'Ari Shobri Bukhari, SST M.Stat.'
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    fauzi_muttaqin:
+      email: fauzi_muttaqin
+      name: 'Fauzi Muttaqin SST, MSR'
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    reni_amelia:
+      email: reni_amelia
+      name: Reni Amelia SST
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    tigor_nirman:
+      email: tigor_nirman
+      name: Tigor Nirman Simanjuntak S.S
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    widyayanto_adinugroho:
+      email: widyayanto_adinugroho
+      name: 'Widyayanto Adinugroho S.ST, M.Si'
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    arham_rivai:
+      email: arham_rivai
+      name: 'Dr. Arham Rivai S.Si, M.Si'
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    muhammad_rifky:
+      email: muhammad_rifky
+      name: Muhammad Rifky Ariyadi S.Tr.Stat.
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    mutijo:
+      email: mutijo
+      name: 'Mutijo S.Si, M.Si'
+      password: $2b$12$Cy4b/jzUwj0mqs6LDz60W.tMRszbfozsx8BbzXPkxYZRXf8Oe9EvS
+    putri_larasaty:
+      email: putri_larasaty
+      name: Putri Larasaty SST
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    valent_gigih:
+      email: valent_gigih
+      name: 'Valent Gigih Saputri SST, M.Ec.Dev.'
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    muchammad_romzi:
+      email: muchammad_romzi
+      name: Dr. Muchammad Romzi
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    adam_sofian:
+      email: adam_sofian
+      name: 'Adam Sofian S.Si, M.Si'
+      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+    taulina_anggarani:
+      email: taulina_anggarani
+      name: 'Taulina Anggarani S.Si, MA'
+      password: $2b$12$jy7uU7JBGKBP.VANtn3iyeaHRD4sMtw/mAm9lxgsz40yKVHaBYWAS
+preauthorized:
+  emails:
+    - satriabgsp22@gmail.com
