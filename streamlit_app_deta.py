@@ -23,14 +23,8 @@ st.set_page_config(
 # Remove Whitespace
 st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
-# Initialize connection.
-def init_connection():
-    return mysql.connect(**st.secrets["mysql"])
-
 # Connect to Deta Base with your Data Key
 deta = Deta(st.secrets["data_key"])
-
-conn = init_connection()
 
 # Configuration login/logout function
 drive_user = deta.Drive("dapscan")
