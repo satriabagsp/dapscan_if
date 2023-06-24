@@ -55,7 +55,7 @@ if st.session_state["authentication_status"]:
     subjudul.empty()
 
     # Coba SIDEBAR DINAMIS
-    df_list_nama = pd.read_csv('data/list_username.csv', sep = ';')
+    # df_list_nama = pd.read_csv('data/list_username.csv', sep = ';')
     pilihNama = st.session_state["name"]
 
     if pilihNama == "admin":
