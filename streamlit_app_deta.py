@@ -211,13 +211,13 @@ if st.session_state["authentication_status"]:
                 st.write(f'''
                     Hallo *{st.session_state["name"]}*,
 
-                    Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Inspiring Fellow Triwulan I 2023, sesuai kriteria di bawah ini.
+                    Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Inspiring Fellow Triwulan II 2023, sesuai kriteria di bawah ini.
                     Harap memberikan nilai antara 1 sampai 10 untuk setiap kriteria. Semakin tinggi nilai, maka pegawai semakin mendekati kriteria yang diharapkan.
-                    1.	**Responsif**: Pegawai memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.
-                    2.	**Kualitas**: Pegawai mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.
-                    3.	**Integritas**: Pegawai memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.
-                    4.	**Dapat diandalkan**: Pegawai dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu. 
-                    5.	**Transparan**: Pegawai tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.
+                    1.	**Learning agility (Semangat belajar)**: Pegawai terus meningkatkan kompetensi diri dengan terus belajar untuk menghadapi tantangan pekerjaan yang selalu berubah.
+                    2.	**Kinerja Terbaik**: Pegawai piawai dalam menyelesaikan masalah secara komprehensif dan tuntas
+                    3.	**Peduli**: Pegawai peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.
+                    4.	**Perbedaan**: Pegawai memiliki sikap yang bijak dalam menghadapi perbedaan, baik perbedaan pendapat, perbedaan kemampuan, maupun perbedaan latar belakang pendidikan. 
+                    5.	**Selaras**: Pegawai selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.
                     
                     🚫 **Note: pegawai diizinkan mengajukan diri sendiri** 🚫
 
@@ -244,23 +244,23 @@ if st.session_state["authentication_status"]:
                 if nama_1 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_1 = st.radio(f'Responsif – {nama_1} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_1 = st.radio(f'Learning agility (Semangat belajar) – {nama_1} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_1 = st.radio(f'Kualitas – {nama_1} mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_1 = st.radio(f'Kinerja Terbaik – {nama_1} mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_1 = st.radio(f'Integritas – {nama_1} memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_1 = st.radio(f'Peduli – {nama_1} memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_1 = st.radio(f'Dapat diandalkan – {nama_1} dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_1 = st.radio(f'Perbedaan – {nama_1} dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_1 = st.radio(f'Transparan – {nama_1} tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_1 = st.radio(f'Selaras – {nama_1} tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_1 = [nama_1, p1_1, p2_1, p3_1, p4_1, p5_1]
@@ -278,23 +278,23 @@ if st.session_state["authentication_status"]:
                 if nama_2 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_2 = st.radio(f'Responsif – {nama_2} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_2 = st.radio(f'Learning agility (Semangat belajar) – {nama_2} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_2 = st.radio(f'Kualitas – {nama_2} mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_2 = st.radio(f'Kinerja Terbaik – {nama_2} mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_2 = st.radio(f'Integritas – {nama_2} memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_2 = st.radio(f'Peduli – {nama_2} memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_2 = st.radio(f'Dapat diandalkan – {nama_2} dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_2 = st.radio(f'Perbedaan – {nama_2} dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_2 = st.radio(f'Transparan – {nama_2} tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_2 = st.radio(f'Selaras – {nama_2} tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_2 = [nama_2, p1_2, p2_2, p3_2, p4_2, p5_2]
@@ -312,23 +312,23 @@ if st.session_state["authentication_status"]:
                 if nama_3 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_3 = st.radio(f'Responsif – {nama_3} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_3 = st.radio(f'Learning agility (Semangat belajar) – {nama_3} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_3 = st.radio(f'Kualitas – {nama_3} mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_3 = st.radio(f'Kinerja Terbaik – {nama_3} mengutamakan output yang berkualitas bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_3 = st.radio(f'Integritas – {nama_3} memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_3 = st.radio(f'Peduli – {nama_3} memiliki sifat yang jujur, bertanggung jawab, dan disiplin dalam bekerja.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_3 = st.radio(f'Dapat diandalkan – {nama_3} dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_3 = st.radio(f'Perbedaan – {nama_3} dapat diandalkan untuk menyelesaikan tugas dengan caranya sendiri secara tepat waktu.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_3 = st.radio(f'Transparan – {nama_3} tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_3 = st.radio(f'Selaras – {nama_3} tidak segan mengkomunikasikan apa yang sedang dikerjakan dan masalah yang dihadapi secara terbuka.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_3 = [nama_3, p1_3, p2_3, p3_3, p4_3, p5_3]
