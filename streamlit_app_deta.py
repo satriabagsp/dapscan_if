@@ -72,7 +72,7 @@ if st.session_state["authentication_status"]:
         if selected == 'Penilaian IF':
             st.title('Hasil Penilaian IF')
 
-            st.write(f'Hallo *{st.session_state["name"]}*, berikut hasil penilaian Inspiring Fellow DAPS.')
+            st.write(f'Halo *{st.session_state["name"]}*, berikut hasil penilaian Inspiring Fellow DAPS.')
             
             def convert_df(df):
                 return df.to_csv(index=False).encode('utf-8')
@@ -96,9 +96,9 @@ if st.session_state["authentication_status"]:
             df_unduh[['p1', 'p2', 'p3', 'p4', 'p5']] = df_unduh[['p1', 'p2', 'p3', 'p4', 'p5']].astype(int)
             df_unduh['nilai_akhir'] = (df_unduh['p1'] + df_unduh['p2']  + df_unduh['p3'] + df_unduh['p4'] + df_unduh['p5']) / 5
             df_unduh = df_unduh[['nama_ternilai','nilai_akhir']]
-            df_unduh = df_unduh.groupby(['nama_ternilai'], as_index=False).agg(jumlah_penilai = ('nilai_akhir','count')).reset_index(drop=True)
+            df_unduh = df_unduh.groupby(['nama_ternilai'], as_index=False).agg(jumlah_penilai = ('nilai_akhir','count'), nilai = ('nilai_akhir','mean')).reset_index(drop=True)
             df_unduh = df_unduh.sort_values(by=['jumlah_penilai','nama_ternilai'], ascending = [False, True]).reset_index(drop=True)
-            df_unduh = df_unduh.rename(columns={'nama_ternilai': 'Nama', 'jumlah_penilai': 'Jumlah Penilai'})
+            df_unduh = df_unduh.rename(columns={'nama_ternilai': 'Nama', 'jumlah_penilai': 'Jumlah Penilai', 'nilai_akhir': 'Nilai Akhir'})
 
             # List yang sudah menilai
             with st.expander("Lihat daftar nama yang sudah menilai"):
@@ -209,17 +209,17 @@ if st.session_state["authentication_status"]:
 
             if len(list_nama_ternilai) == 0:
                 st.write(f'''
-                    Hallo *{st.session_state["name"]}*,
+                    Halo *{st.session_state["name"]}*,
 
                     Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Inspiring Fellow Triwulan II 2023, sesuai kriteria di bawah ini.
                     Harap memberikan nilai antara 1 sampai 10 untuk setiap kriteria. Semakin tinggi nilai, maka pegawai semakin mendekati kriteria yang diharapkan.
                     1.	**Learning agility (Semangat belajar)**: Pegawai terus meningkatkan kompetensi diri dengan terus belajar untuk menghadapi tantangan pekerjaan yang selalu berubah.
                     2.	**Kinerja Terbaik**: Pegawai piawai dalam menyelesaikan masalah secara komprehensif dan tuntas.
-                    3.	**Peduli**: Pegawai peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.
+                    3.	**Peduli**: Pegawai memahami kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.
                     4.	**Perbedaan**: Pegawai memiliki sikap yang bijak dalam menghadapi perbedaan, baik perbedaan pendapat, perbedaan kemampuan, maupun perbedaan latar belakang pendidikan. 
-                    5.	**Selaras**: Pegawai selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.
+                    5.	**Selaras**: Pegawai selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi penyulut (kompor) namun menjadi peredam, tidak nyinyir dengan inisiatif namun mendukung implementasi ide-ide baru.
                     
-                    🚫 **Note: pegawai diizinkan mengajukan diri sendiri** 🚫
+                    **Note: pegawai diizinkan mengajukan diri sendiri dan CAN tidak masuk dalam calon IF**
 
                     ''')
                 
@@ -252,7 +252,7 @@ if st.session_state["authentication_status"]:
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_1 = st.radio(f'Peduli – {nama_1} peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_1 = st.radio(f'Peduli – {nama_1} memahami kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
@@ -260,7 +260,7 @@ if st.session_state["authentication_status"]:
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_1 = st.radio(f'Selaras – {nama_1} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_1 = st.radio(f'Selaras – {nama_1} selalu selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi penyulut (kompor) namun menjadi peredam, tidak nyinyir dengan inisiatif namun mendukung implementasi ide-ide baru.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_1 = [nama_1, p1_1, p2_1, p3_1, p4_1, p5_1]
@@ -286,7 +286,7 @@ if st.session_state["authentication_status"]:
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_2 = st.radio(f'Peduli – {nama_2} peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_2 = st.radio(f'Peduli – {nama_2} memahami kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
@@ -294,7 +294,7 @@ if st.session_state["authentication_status"]:
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_2 = st.radio(f'Selaras – {nama_2} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_2 = st.radio(f'Selaras – {nama_2} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi penyulut (kompor) namun menjadi peredam, tidak nyinyir dengan inisiatif namun mendukung implementasi ide-ide baru.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_2 = [nama_2, p1_2, p2_2, p3_2, p4_2, p5_2]
@@ -320,7 +320,7 @@ if st.session_state["authentication_status"]:
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_3 = st.radio(f'Peduli – {nama_3} peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_3 = st.radio(f'Peduli – {nama_3} memahami kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
@@ -328,7 +328,7 @@ if st.session_state["authentication_status"]:
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_3 = st.radio(f'Selaras – {nama_3} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_3 = st.radio(f'Selaras – {nama_3} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi penyulut (kompor) namun menjadi peredam, tidak nyinyir dengan inisiatif namun mendukung implementasi ide-ide baru.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_3 = [nama_3, p1_3, p2_3, p3_3, p4_3, p5_3]
@@ -367,7 +367,7 @@ if st.session_state["authentication_status"]:
             elif len(list_nama_ternilai) == 3:
 
                 st.write(f'''
-                    Hallo *{st.session_state["name"]}*,
+                    Halo *{st.session_state["name"]}*,
 
                     Anda sebelumnya telah menominasikan 3 (tiga) pegawai yang telah dinilai:
 
@@ -436,7 +436,7 @@ if st.session_state["authentication_status"]:
             if len(df_budaya) == 0: # Belum menilai
                 # st.warning('Anda belum memilih.')
                 st.write(f'''
-                    Hallo *{st.session_state["name"]}*,
+                    Halo *{st.session_state["name"]}*,
 
                     Perubahan budaya kerja (*culture change*) adalah proses merubah kebiasaan atau pola pikir untuk mendorong performa kerja yang lebih baik. 
                     Performa kerja yang lebih baik dapat dicapai jika didukung oleh lingkungan kerja yang nyaman, 
@@ -507,7 +507,7 @@ if st.session_state["authentication_status"]:
 
             else: # Sudah menilai
                 st.write(f'''
-                    Hallo *{st.session_state["name"]}*,
+                    Halo *{st.session_state["name"]}*,
 
                     Anda sebelumnya telah menilai budaya kerja di DAPS. Apabila anda ingin mengubah penilaian anda silakan tekan tombol dibawah ini.
 
@@ -536,7 +536,7 @@ if st.session_state["authentication_status"]:
             else:
 
                 st.markdown("<h1 style='text-align: center; color: white;'>🌟 SELAMAT 🌟</h1>", unsafe_allow_html=True)
-                st.markdown(f"<h2 style='text-align: center; color: white;'>ANDA MENGINSPIRASI {len(df_hasil)} PEGAWAI DAPS</h2>", unsafe_allow_html=True)
+                st.markdown(f"<h2 style='text-align: center; color: white;'>ANDA BERHASIL MENGINSPIRASI {len(df_hasil)} ORANG</h2>", unsafe_allow_html=True)
 
                 rerata_p1 = mean(df_hasil['p1'].astype(int).to_list())
                 rerata_p2 = mean(df_hasil['p2'].astype(int).to_list())
