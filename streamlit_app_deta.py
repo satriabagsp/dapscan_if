@@ -214,7 +214,7 @@ if st.session_state["authentication_status"]:
                     Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Insiring Fellow Triwulan IIII 2023, sesuai kriteria berikut ini:
                     1.	**Nasionalisme**: Pegawai bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.
                     2.	**pengabdian dan dedikasi**: Pegawai siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).
-                    3.	**Komitmen**: Pegawai menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.
+                    3.	**Komitmen**: Pegawai mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti
                     4.	**Inovatif**: Pegawai menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan. 
                     5.	**Proaktif**: Pegawai memiliki inisiatif untuk mengambil tindakan yang diperlukan untuk mencapai tujuan tanpa harus menunggu instruksi atasan.
                     
