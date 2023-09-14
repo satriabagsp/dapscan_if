@@ -26,7 +26,7 @@ def app(selected, pilihNama, conn):
 
         st.write(f'1. Nasionalisme: {rerata_p1}')
         st.write('')
-        st.write(f'2. Pengangabdian dan dedikasi: {rerata_p2}')
+        st.write(f'2. pengabdian dan dedikasi: {rerata_p2}')
         st.write('')
         st.write(f'3. Komitmen: {rerata_p3}')
         st.write('')
