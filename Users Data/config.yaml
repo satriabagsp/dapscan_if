@@ -175,7 +175,7 @@ credentials:
     satria_bagus_panuntun:
       email: satriabgsp22@gmail.com
       name: Satria Bagus Panuntun S.Tr.Stat.
-      password: $2b$12$LhAMYsnljlig5ARp0ZB8Lel3mbZyi5TYXp9nOvCm6pGgIezKYG7.u
+      password: $2b$12$1lkfw/UtQPqP8S/OsLCD.uL2IibpWhIDrEuEnrX8eaJg9xL14r/2i
     sofaria_ayuni:
       email: sofaria_ayuni
       name: 'Sofaria Ayuni S.Si, MM'
@@ -207,7 +207,7 @@ credentials:
     wisnu_winardi:
       email: wisnu_winardi
       name: 'Wisnu Winardi SST, ME.'
-      password: $2b$12$TCa/XJAsxJKXtgSA/ivGBOSgFB.pp9vwpiq824vu24zl8z2fkVnOa
+      password: $2b$12$vzTor6Sz59NGcdBvEi8Rbem/kqydyix/UUG9L.4HvsbpxrHcQ/kF6
     yeshri_rahayu:
       email: yeshri_rahayu
       name: 'Yeshri Rahayu S.Si, M.Sc, MT'
@@ -243,7 +243,7 @@ credentials:
     reni_amelia:
       email: reni_amelia
       name: Reni Amelia SST
-      password: $2b$12$9BwfNLbo3xkVZAmFpqdWH.qwEv.LPUDFIZNmEwm.FlKQxAGRWfTty
+      password: $2b$12$oiveDfCv1e1N4zHHfnS5vewPLmQXWAgsNZvnvCyIk9w/Rkyng4blC
     tigor_nirman:
       email: tigor_nirman
       name: Tigor Nirman Simanjuntak S.S
@@ -284,6 +284,18 @@ credentials:
       email: taulina_anggarani
       name: 'Taulina Anggarani S.Si, MA'
       password: $2b$12$jy7uU7JBGKBP.VANtn3iyeaHRD4sMtw/mAm9lxgsz40yKVHaBYWAS
+    taulina:
+      name: Taulina Anggarani
+      password: $2b$12$o.lTs29Uhfzjs0FvyfrcBe9hEzDgt3MTkVIFd.yZxBdVI3QhTyzoO
+      email: taulina@bps.go.id
+    mutijo_1:
+      name: Mutijo
+      password: $2b$12$VBYitlITwOLGEQTSV18Zje6n6rh6L.4FC39Ju0hJgamk1nd6DGeTy
+      email: mutijo@bps.go.id
+    syukriyah:
+      name: Syukriyah Delyana
+      password: $2b$12$sX7Px/hx8bL1CV9N7Y7Ed.FlSatIo/kp6Xvw2K6TCJxcxOOYVG/eS
+      email: syukriyah@bps.go.id
 preauthorized:
   emails:
     - satriabgsp22@gmail.com

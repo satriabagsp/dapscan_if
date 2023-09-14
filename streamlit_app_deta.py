@@ -211,13 +211,12 @@ if st.session_state["authentication_status"]:
                 st.write(f'''
                     Hallo *{st.session_state["name"]}*,
 
-                    Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Inspiring Fellow Triwulan II 2023, sesuai kriteria di bawah ini.
-                    Harap memberikan nilai antara 1 sampai 10 untuk setiap kriteria. Semakin tinggi nilai, maka pegawai semakin mendekati kriteria yang diharapkan.
-                    1.	**Learning agility (Semangat belajar)**: Pegawai terus meningkatkan kompetensi diri dengan terus belajar untuk menghadapi tantangan pekerjaan yang selalu berubah.
-                    2.	**Kinerja Terbaik**: Pegawai piawai dalam menyelesaikan masalah secara komprehensif dan tuntas.
-                    3.	**Peduli**: Pegawai peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.
-                    4.	**Perbedaan**: Pegawai memiliki sikap yang bijak dalam menghadapi perbedaan, baik perbedaan pendapat, perbedaan kemampuan, maupun perbedaan latar belakang pendidikan. 
-                    5.	**Selaras**: Pegawai selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.
+                    Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Insiring Fellow Triwulan IIII 2023, sesuai kriteria berikut ini:
+                    1.	**Nasionalisme**: Pegawai bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.
+                    2.	**Pengangabdian dan dedikasi**: Pegawai siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).
+                    3.	**Komitmen**: Pegawai menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.
+                    4.	**Inovatif**: Pegawai menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan. 
+                    5.	**Proaktif**: Pegawai memiliki inisiatif untuk mengambil tindakan yang diperlukan untuk mencapai tujuan tanpa harus menunggu instruksi atasan.
                     
                     🚫 **Note: pegawai diizinkan mengajukan diri sendiri** 🚫
 
@@ -244,23 +243,23 @@ if st.session_state["authentication_status"]:
                 if nama_1 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_1 = st.radio(f'Learning agility (Semangat belajar) – {nama_1} terus meningkatkan kompetensi diri dengan terus belajar untuk menghadapi tantangan pekerjaan yang selalu berubah.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_1 = st.radio(f'Nasionalisme – {nama_1} bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_1 = st.radio(f'Kinerja Terbaik – {nama_1} piawai dalam menyelesaikan masalah secara komprehensif dan tuntas.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_1 = st.radio(f'Pengangabdian dan dedikasi – {nama_1} siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_1 = st.radio(f'Peduli – {nama_1} peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_1 = st.radio(f'Komitmen – {nama_1} mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_1 = st.radio(f'Perbedaan – {nama_1} memiliki sikap yang bijak dalam menghadapi perbedaan, baik perbedaan pendapat, perbedaan kemampuan, maupun perbedaan latar belakang pendidikan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_1 = st.radio(f'Inovatif – {nama_1} menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_1 = st.radio(f'Selaras – {nama_1} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_1 = st.radio(f'Antusias – {nama_1} Pegawai selalu bersemangat dalam melakukan pekerjaan yang ditugaskan dan relatif tidak banyak mengeluh.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_1 = [nama_1, p1_1, p2_1, p3_1, p4_1, p5_1]
@@ -278,23 +277,23 @@ if st.session_state["authentication_status"]:
                 if nama_2 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_2 = st.radio(f'Learning agility (Semangat belajar) – {nama_2} terus meningkatkan kompetensi diri dengan terus belajar untuk menghadapi tantangan pekerjaan yang selalu berubah.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_2 = st.radio(f'Nasionalisme – {nama_2} bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_2 = st.radio(f'Kinerja Terbaik – {nama_2} piawai dalam menyelesaikan masalah secara komprehensif dan tuntas.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_2 = st.radio(f'Pengangabdian dan dedikasi – {nama_2} siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_2 = st.radio(f'Peduli – {nama_2} peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_2 = st.radio(f'Komitmen – {nama_2} mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_2 = st.radio(f'Perbedaan – {nama_2} memiliki sikap yang bijak dalam menghadapi perbedaan, baik perbedaan pendapat, perbedaan kemampuan, maupun perbedaan latar belakang pendidikan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_2 = st.radio(f'Inovatif – {nama_2} menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_2 = st.radio(f'Selaras – {nama_2} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_2 = st.radio(f'Antusias – {nama_2} Pegawai selalu bersemangat dalam melakukan pekerjaan yang ditugaskan dan relatif tidak banyak mengeluh.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_2 = [nama_2, p1_2, p2_2, p3_2, p4_2, p5_2]
@@ -312,23 +311,23 @@ if st.session_state["authentication_status"]:
                 if nama_3 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_3 = st.radio(f'Learning agility (Semangat belajar) – {nama_3} terus meningkatkan kompetensi diri dengan terus belajar untuk menghadapi tantangan pekerjaan yang selalu berubah.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_3 = st.radio(f'Nasionalisme – {nama_3} bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_3 = st.radio(f'Kinerja Terbaik – {nama_3} piawai dalam menyelesaikan masalah secara komprehensif dan tuntas.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_3 = st.radio(f'Pengangabdian dan dedikasi – {nama_3} siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_3 = st.radio(f'Peduli – {nama_3} peka dan responsif terhadap kondisi rekan kerja dan memiliki inisiatif untuk membantu apabila ada yang mengalami kesulitan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_3 = st.radio(f'Komitmen – {nama_3} mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_3 = st.radio(f'Perbedaan – {nama_3} memiliki sikap yang bijak dalam menghadapi perbedaan, baik perbedaan pendapat, perbedaan kemampuan, maupun perbedaan latar belakang pendidikan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_3 = st.radio(f'Inovatif – {nama_3} menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_3 = st.radio(f'Selaras – {nama_3} selalu berusaha menciptakan lingkungan kerja yang kondusif, menjaga hubungan yang baik dengan rekan kerja, atasan, bawahan dan stakeholder, tidak menjadi kompor namun peredam, tidak nyinyir dengan inisiatif namun mendukung kesuksesan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_3 = st.radio(f'Antusias – {nama_3} Pegawai selalu bersemangat dalam melakukan pekerjaan yang ditugaskan dan relatif tidak banyak mengeluh.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_3 = [nama_3, p1_3, p2_3, p3_3, p4_3, p5_3]
