@@ -211,12 +211,12 @@ if st.session_state["authentication_status"]:
                 st.write(f'''
                     Halo *{st.session_state["name"]}*,
 
-                    Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Insiring Fellow Triwulan IIII 2023, sesuai kriteria berikut ini:
-                    1.	**Nasionalisme**: Pegawai bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.
-                    2.	**pengabdian dan dedikasi**: Pegawai siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).
-                    3.	**Komitmen**: Pegawai mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti
-                    4.	**Inovatif**: Pegawai menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan. 
-                    5.	**Proaktif**: Pegawai memiliki inisiatif untuk mengambil tindakan yang diperlukan untuk mencapai tujuan tanpa harus menunggu instruksi atasan.
+                    Silakan nominasikan 3 (tiga) nama pegawai DAPS yang layak menjadi Insiring Fellow Triwulan IV 2023, sesuai kriteria berikut ini:
+                    1.	**Bekerjasama**: Pegawai bersedia berkerjasama dan siap membangun chemistry dengan siapapun, baik dengan pegawai dari dalam timnya maupun dari luar timnya.
+                    2.	**Sinergi**: Pegawai mampu menciptakan solusi atau gagasan yang lebih baik dan inovatif dari sebuah kerjasama dengan tetap mengutamakan kejasama  yang harmonis.
+                    3.	**Responsif**: Pegawai memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.
+                    4.	**Kualitas**: Pegawai mengutamakan output yang berkualitas dan memiliki value, bukan “yang penting ada” atau “yang penting selesai”. 
+                    5.	**Kepuasan**: Pegawai bersedia melakukan perbaikan terhadap kinerja serta output pekerjaan untuk hasil yang memuaskan dan berdampak.
                     
                     **Note: pegawai diizinkan mengajukan diri sendiri dan CAN tidak masuk dalam calon IF**
 
@@ -243,23 +243,23 @@ if st.session_state["authentication_status"]:
                 if nama_1 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_1 = st.radio(f'Nasionalisme – {nama_1} bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_1 = st.radio(f'Bekerjasama – {nama_1} bersedia berkerjasama dan siap membangun chemistry dengan siapapun, baik dengan pegawai dari dalam timnya maupun dari luar timnya.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_1 = st.radio(f'pengabdian dan dedikasi – {nama_1} siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_1 = st.radio(f'Sinergi – {nama_1} mampu menciptakan solusi atau gagasan yang lebih baik dan inovatif dari sebuah kerjasama dengan tetap mengutamakan kejasama  yang harmonis.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_1 = st.radio(f'Komitmen – {nama_1} mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_1 = st.radio(f'Responsif – {nama_1} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_1 = st.radio(f'Inovatif – {nama_1} menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_1 = st.radio(f'Kualitas – {nama_1} mengutamakan output yang berkualitas dan memiliki value, bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_1 = st.radio(f'Antusias – {nama_1} Pegawai selalu bersemangat dalam melakukan pekerjaan yang ditugaskan dan relatif tidak banyak mengeluh.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_1 = st.radio(f'Kepuasan – {nama_1} bersedia melakukan perbaikan terhadap kinerja serta output pekerjaan untuk hasil yang memuaskan dan berdampak.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_1 = [nama_1, p1_1, p2_1, p3_1, p4_1, p5_1]
@@ -277,23 +277,23 @@ if st.session_state["authentication_status"]:
                 if nama_2 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_2 = st.radio(f'Nasionalisme – {nama_2} bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_2 = st.radio(f'Bekerjasama – {nama_2} bersedia berkerjasama dan siap membangun chemistry dengan siapapun, baik dengan pegawai dari dalam timnya maupun dari luar timnya.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_2 = st.radio(f'pengabdian dan dedikasi – {nama_2} siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_2 = st.radio(f'Sinergi – {nama_2} mampu menciptakan solusi atau gagasan yang lebih baik dan inovatif dari sebuah kerjasama dengan tetap mengutamakan kejasama  yang harmonis.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_2 = st.radio(f'Komitmen – {nama_2} mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_2 = st.radio(f'Responsif – {nama_2} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_2 = st.radio(f'Inovatif – {nama_2} menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_2 = st.radio(f'Kualitas – {nama_2} mengutamakan output yang berkualitas dan memiliki value, bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_2 = st.radio(f'Antusias – {nama_2} Pegawai selalu bersemangat dalam melakukan pekerjaan yang ditugaskan dan relatif tidak banyak mengeluh.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_2 = st.radio(f'Kepuasan – {nama_2} bersedia melakukan perbaikan terhadap kinerja serta output pekerjaan untuk hasil yang memuaskan dan berdampak.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_2 = [nama_2, p1_2, p2_2, p3_2, p4_2, p5_2]
@@ -311,23 +311,23 @@ if st.session_state["authentication_status"]:
                 if nama_3 != '- Belum dipilih -':
                     try:
                         # p1
-                        p1_3 = st.radio(f'Nasionalisme – {nama_3} bangga menjadi pegawai BPS dan senantiasa menjaga nama baik pimpinan dan institusi.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p1_3 = st.radio(f'Bekerjasama – {nama_3} bersedia berkerjasama dan siap membangun chemistry dengan siapapun, baik dengan pegawai dari dalam timnya maupun dari luar timnya.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p2
-                        p2_3 = st.radio(f'pengabdian dan dedikasi – {nama_3} siap dan mampu bekerja lebih keras ketika dihadapkan pada situasi darurat (sense of urgency nya tinggi).', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p2_3 = st.radio(f'Sinergi – {nama_3} mampu menciptakan solusi atau gagasan yang lebih baik dan inovatif dari sebuah kerjasama dengan tetap mengutamakan kejasama  yang harmonis.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p3
-                        p3_3 = st.radio(f'Komitmen – {nama_3} mampu menyeimbangkan komitmen dalam menjalankan tugas sesuai kesepakatan tim-tim kerja yang diikuti.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p3_3 = st.radio(f'Responsif – {nama_3} memahami kebutuhan tim kerja, mengerti apa yang haru dilakukan, cekatan dan solutif.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p4
-                        p4_3 = st.radio(f'Inovatif – {nama_3} menyelesaikan pekerjaan dengan lebih efisien dan efektif dengan caranya sendiri tanpa mengurangi kualitas hasil pekerjaan.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p4_3 = st.radio(f'Kualitas – {nama_3} mengutamakan output yang berkualitas dan memiliki value, bukan “yang penting ada” atau “yang penting selesai”.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         # p5
-                        p5_3 = st.radio(f'Antusias – {nama_3} Pegawai selalu bersemangat dalam melakukan pekerjaan yang ditugaskan dan relatif tidak banyak mengeluh.', ('0','1','2','3','4','5','6','7','8','9','10'))
+                        p5_3 = st.radio(f'Kepuasan – {nama_3} bersedia melakukan perbaikan terhadap kinerja serta output pekerjaan untuk hasil yang memuaskan dan berdampak.', ('0','1','2','3','4','5','6','7','8','9','10'))
                         st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 
                         data_3 = [nama_3, p1_3, p2_3, p3_3, p4_3, p5_3]
