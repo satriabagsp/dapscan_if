@@ -84,9 +84,9 @@ credentials:
       email: '-'
       name: Farhan Anshari Arsyi S.Tr.Stat.
       password: $2b$12$cyx13UrKLag4U4n99/U5ZOt8ORnODTATBayIK33R4nviQjgowONQq
-    fenny_afifatul_awwaliyah:
-      email: fenny_afifatul_awwaliyah
-      name: Fenny Afifatul Awwaliyah S.Tr.Stat.
+    ammar_alwandi:
+      email: ammar_alwandi
+      name: Mohammad Ammar Alwandi S.Tr.Stat.
       password: $2b$12$wil73uhnmcqUNiiZVVvuzeAHVtaEK3oI3JuoeNPOOcZ5Apv2UvgE2
     gusti_ngurah_agung_rama_gunawan:
       email: gusti_ngurah_agung_rama_gunawan
@@ -104,9 +104,9 @@ credentials:
       email: julita_lovitawati_aritonang
       name: Julita Lovitawati Br. Aritonang SST
       password: $2b$12$nArD.05twhO1mnyzvO0OA.mdW0q3iwCxjtIzU/b7noKgSayzAKtcO
-    kasiful_aprianto:
-      email: '-'
-      name: Kasiful Aprianto SST
+    lika_zuyyina:
+      email: lika_zuyyina
+      name: Lika Zuyyina Fuaida S.Tr.Stat.
       password: $2b$12$iItUAxGPnHKSHCvvsuY4j.rzFE3uJwyAEDYtCGsaYMivrtYgA4PIi
     khairunnisah:
       email: khairunnisah
@@ -200,9 +200,9 @@ credentials:
       email: usman_bustaman
       name: 'Usman Bustaman S.Si, M.Sc'
       password: $2b$12$FCOv2w.hr9NMuX7.u6LLduQEUhB2vmEeomeRuoial4W4wF48H267e
-    wahyu_calvin_frans_mariel:
-      email: wahyu_calvin_frans_mariel
-      name: Wahyu Calvin Frans Mariel SST
+    edi_waryono:
+      email: edi_waryono
+      name: Edi Waryono S.Si., M.Kesos.
       password: $2b$12$JbkYYH2R3mmzf6i6ORXxSuawLdIqGmrYxIL1pUige4j3SXcXDAtze
     wisnu_winardi:
       email: wisnu_winardi
